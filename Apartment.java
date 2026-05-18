@@ -1,20 +1,27 @@
-// Apartment.java
 public class Apartment {
     private String streetAddress;
     private String apartmentNumber;
     private int bedrooms;
     private double rent;
 
-    // Constructor with validation
-    public Apartment(String streetAddress, String apartmentNumber, int bedrooms, double rent) throws ApartmentException {
+    public Apartment(String streetAddress,
+                     String apartmentNumber,
+                     int bedrooms,
+                     double rent) throws ApartmentException {
+
         if (!apartmentNumber.matches("\\d{3}")) {
-            throw new ApartmentException("Apartment number must be exactly three digits.");
+            throw new ApartmentException(
+                    "Invalid apartment number. Apartment object will not be created!");
         }
+
         if (bedrooms < 1 || bedrooms > 4) {
-            throw new ApartmentException("Number of bedrooms must be between 1 and 4.");
+            throw new ApartmentException(
+                    "Invalid number of beds. Apartment object will not be created!");
         }
+
         if (rent < 500 || rent > 2500) {
-            throw new ApartmentException("Rent must be between $500 and $2500.");
+            throw new ApartmentException(
+                    "Invalid rent amount. Apartment object will not be created!");
         }
 
         this.streetAddress = streetAddress;
@@ -23,41 +30,28 @@ public class Apartment {
         this.rent = rent;
     }
 
-    // Getters
-    public String getStreetAddress() { return streetAddress; }
-    public String getApartmentNumber() { return apartmentNumber; }
-    public int getBedrooms() { return bedrooms; }
-    public double getRent() { return rent; }
-
-    // Setters
-    public void setStreetAddress(String streetAddress) { this.streetAddress = streetAddress; }
-    public void setApartmentNumber(String apartmentNumber) throws ApartmentException {
-        if (!apartmentNumber.matches("\\d{3}")) {
-            throw new ApartmentException("Apartment number must be exactly three digits.");
-        }
-        this.apartmentNumber = apartmentNumber;
-    }
-    public void setBedrooms(int bedrooms) throws ApartmentException {
-        if (bedrooms < 1 || bedrooms > 4) {
-            throw new ApartmentException("Number of bedrooms must be between 1 and 4.");
-        }
-        this.bedrooms = bedrooms;
-    }
-    public void setRent(double rent) throws ApartmentException {
-        if (rent < 500 || rent > 2500) {
-            throw new ApartmentException("Rent must be between $500 and $2500.");
-        }
-        this.rent = rent;
+    public String getStreetAddress() {
+        return streetAddress;
     }
 
-    // toString method
+    public String getApartmentNumber() {
+        return apartmentNumber;
+    }
+
+    public int getBedrooms() {
+        return bedrooms;
+    }
+
+    public double getRent() {
+        return rent;
+    }
+
     @Override
     public String toString() {
-        return "Apartment{" +
-                "Street Address='" + streetAddress + '\'' +
-                ", Apartment Number='" + apartmentNumber + '\'' +
-                ", Bedrooms=" + bedrooms +
-                ", Rent=$" + rent +
-                '}';
+        return "Apartment object successfully created\n" +
+                "Street Name: " + streetAddress + "\n" +
+                "Apartment Number: " + apartmentNumber + "\n" +
+                "Number of beds: " + bedrooms + "\n" +
+                "Rent: " + rent + "\n";
     }
 }
