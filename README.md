@@ -28,21 +28,25 @@ Object-oriented design
 
 Screenshots
 Main Application Window
-<img width="1366" height="768" alt="Screenshot (948)" src="https://github.com/user-attachments/assets/6b2ea74f-a11b-424d-939f-b924e5b6e2c4" />
+<img width="1366" height="726" alt="Screenshot (948)" src="https://github.com/user-attachments/assets/d96aa0a0-2dde-4bec-bb0a-c819e9a98b23" />
+
 
 Add screenshot here
-<img width="1366" height="768" alt="Screenshot (953)" src="https://github.com/user-attachments/assets/940e211a-691b-466f-a3e3-982cfd2e0608" />
+
+<img width="1366" height="728" alt="Screenshot (953)" src="https://github.com/user-attachments/assets/6551b493-6c89-4de2-bdda-0b555902d42b" />
 
 Apartment Successfully Added
 
 Add screenshot here
-<img width="1366" height="768" alt="Screenshot (950)" src="https://github.com/user-attachments/assets/a651aa8e-e39b-4d82-8fd4-5bfee075b2e0" />
+<img width="1366" height="716" alt="Screenshot (950)" src="https://github.com/user-attachments/assets/f2892e0b-8545-4778-b994-56f3d1b71034" />
+
 
 Validation Error Message
 
 Add screenshot here
 
-<img width="1366" height="768" alt="Screenshot (954)" src="https://github.com/user-attachments/assets/af42c782-ad4b-4382-bc48-a61028f9eb30" />
+<img width="1366" height="722" alt="Screenshot (954)" src="https://github.com/user-attachments/assets/59ac888d-e2cc-4c46-9459-da11b19a33be" />
+
 
  How to Run
 1. Install Java
