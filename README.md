@@ -55,7 +55,8 @@ Make sure Java JDK 17 or later is installed.
 
 Check installation:
 
-java --version
+java --version 
+
 2. Install JavaFX SDK
 
 Download JavaFX SDK from:
@@ -67,6 +68,7 @@ Extract the SDK to a known location.
 Example:
 
 C:\javafx-sdk
+
 3. Compile the Program
 
 Open terminal/command prompt inside the project folder and run:
@@ -76,13 +78,17 @@ javac --module-path "PATH_TO_FX" --add-modules javafx.controls *.java
 Example:
 
 javac --module-path "C:\javafx-sdk\lib" --add-modules javafx.controls *.java
+
 4. Run the Application
+   
 java --module-path "PATH_TO_FX" --add-modules javafx.controls ApartmentGUI
 
 Example:
 
 java --module-path "C:\javafx-sdk\lib" --add-modules javafx.controls ApartmentGUI
+
 5. Using the Application
+   
 Enter:
 Street Name
 Apartment Number
